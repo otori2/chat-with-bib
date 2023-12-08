@@ -1,0 +1,10 @@
+services:
+  chat-with-bib:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/workspace"
+    tty: true
+    ports:
+      - "18000:8000"
